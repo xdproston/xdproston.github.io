@@ -1,4 +1,4 @@
-document.getElementsByName('button').forEach(value => {
+document.getElementsById('button').forEach(value => {
     value.addEventListener('click', listener => {
         alert('Вы нажали на кнопку!')
     })
