@@ -30,7 +30,13 @@
         </nav>
     </footer>
 
-    <script src="static/scripts/global.js"></script>
+    <script>
+        document.getElementsById('button').forEach(value => {
+            value.addEventListener('click', () => {
+                alert('Вы нажали на кнопку!')
+            })
+        })
+    </script>
 </body>
 
 </html>
