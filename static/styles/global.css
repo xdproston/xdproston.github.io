@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+/*
+    стилизация всего
+*/
+body {
+    background-color: rgb(36, 36, 36);
+    font-family: "Nunito", sans-serif;
+    text-align: center;
+    color: white;
+}
+
+/*
+    сделал так, чтобы '1.', '2.' и т.д
+    отображались рядом с содержанием списка
+*/
+ol {
+    list-style-position: inside; 
+    padding: 0;
+}
+
+img {
+    max-width: 250px;
+}
+
+/*
+    стилизация содержимого на 2 и 3 странице
+*/
+.cards {
+    display: inline-flex;
+}
+
+.cards-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.card {
+    margin: 10px;
+}
+
+.card>h2 {
+    margin: 0;
+}
+
+/* 
+    сделал так, чтобы текст занимал всё доступное место
+    по умолчанию этот элемент имеет вид отображения inline
+*/
+span {
+    display: block;
+}
+
+/* 
+    думаю, тут ничего не нужно объяснять
+*/
+h2 {
+    margin-top: 10px;
+}
+
+h3 {
+    margin-bottom: 10px;
+}
+
+/*
+    стилизация видео
+*/
+video {
+    max-width: 750px;
+    border-style: solid;
+    border-color: rgb(0, 247, 255);
+    border-radius: 5px;
+}
+
+/*
+    стилизация заголовка посередине страницы
+*/
+.title {
+    font-weight: bold;
+    font-size: larger;
+    display: block;
+    color: rgb(0, 247, 255);
+    font-size: 56px;
+}
+
+/* 
+    расположение кнопок 'дальше' и 'назад' по центру
+*/
+.pagination-nav {
+    margin-top: 30px;
+}
+
+/* 
+    стилизация кнопок 'дальше' и 'назад'
+*/
+.pagination-nav>a {
+    margin-left: 25px;
+    margin-right: 25px;
+    padding: 5px;
+    border-style: solid;
+    border-color: rgb(158, 158, 0);
+    border-radius: 10px;
+    border-width: 0.5px;
+    text-decoration: none;
+    color: yellow;
+}
+
+/* 
+    сделал так, чтобы при только наведении
+    ссылки подчеркивались
+*/
+.pagination-nav>a:hover {
+    text-decoration: underline;
+}
+
+/* 
+    чтобы при нажатии менялся цвет
+*/
+.pagination-nav>a:active {
+    color: rgb(122, 122, 0);
+}
