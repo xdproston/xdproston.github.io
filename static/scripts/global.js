@@ -1,5 +1,5 @@
 document.getElementsById('button').forEach(value => {
-    value.addEventListener('click', listener => {
+    value.addEventListener('click', () => {
         alert('Вы нажали на кнопку!')
     })
 })
